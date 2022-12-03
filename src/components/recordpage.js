@@ -56,7 +56,7 @@ const BodyFatGraph = () => {
         <div className='graph-info__buttons'>
             {
                 GRAPH_INFO_BUTTONS.map(({ id, displayText }) =>
-                    <div className={`graph-info__button ${activeId === id && 'graph-info__button--active'}`}
+                    <div key={id} className={`graph-info__button ${activeId === id && 'graph-info__button--active'}`}
                         onClick={() => onHandleButtonClick(id)}>{displayText}</div>)
             }
         </div>
@@ -70,7 +70,7 @@ const ExcerciseRecords = () => {
             <span className='graph-info__title__time'>2021.05.21</span>
         </div>
         <div className='excercise-record__list'>
-            {EXCERCISE_RECORD.map(record => <div className='excercise-record__item__container'>
+            {EXCERCISE_RECORD.map((record, ind) => <div key={'er' + ind} className='excercise-record__item__container'>
                 <span>*</span>
                 <div>
                     <span className='excercise-record__item__name'>{record.name}</span>
@@ -88,7 +88,7 @@ const Diary = () => {
             <span>MY DIARY</span>
         </div>
         <div className='diary__list'>
-            {DIARY_RECORDS.map(record => <div className='diary__item'>
+            {DIARY_RECORDS.map((record, ind) => <div key={'dr' + ind} className='diary__item'>
                 <span className='diary__item__time'>{record.time.date}</span>
                 <span className='diary__item__time'>{record.time.time}</span>
                 <span className='diary__item__title'>{record.title}</span>

@@ -46,7 +46,7 @@ const TransitButtons = () => {
 
 const MealHistory = () => {
     return <div className='meal-history'>
-        {MEAL_HISTORY.map(mealInf => (<div className='meal-history__item'>
+        {MEAL_HISTORY.map((mealInf, ind) => (<div key={'mh' + ind} className='meal-history__item'>
             <img src={mealInf.src} alt='' className='meal-history__image' />
             <span className='meal-history__text'>{mealInf.text}</span>
         </div>))}

@@ -22,8 +22,8 @@ export const ColumnPage = (props) => {
                 </div>))}
             </div>
             <div className='meal-history'>
-                {RECOMMENDATION_ITEMS.map(({ time, src, recommendations, title }) => (
-                    <div className='recommendation__item'>
+                {RECOMMENDATION_ITEMS.map(({ time, src, recommendations, title }, ind) => (
+                    <div key={'ri' + ind} className='recommendation__item'>
                         <div className='recommendation__item__image'>
                             <img src={src} alt='' className='meal-history__image' />
                             <span className='meal-history__text'>{time}</span>
