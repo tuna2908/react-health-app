@@ -1,0 +1,19 @@
+.footer {
+    background: #414141;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15vh;
+}
+
+.footer__text {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.033px;
+    color: #FFFFFF;
+    margin: 30px;
+}

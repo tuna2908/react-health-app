@@ -1,0 +1,80 @@
+.recommendation-cate__item {
+    width: 20%;
+    margin: 11px;
+    background: #2E2E2E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.horizontal-line-break {
+    width: 30%;
+    height: 1px;
+    background-color: gray;
+}
+
+.horizontal-line-break--full-size {
+    width: 100%;
+}
+
+.recommendation-cate__detail {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.recommendation-cate__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.11px;
+    white-space: pre-line;
+    color: #FFCC21;
+}
+
+.recommendation__item {
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    width: 23%;
+}
+
+.recommendation__item__image {
+    display: inline-block;
+    height: 140px;
+    margin: 7px 0px;
+    position: relative;
+}
+
+.recommendation__item__title {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.075px;
+    color: #414141;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+.recommendation__item__recommend-details {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 183% */
+
+    letter-spacing: 0.06px;
+
+    color: #FF963C;
+}
